@@ -39,6 +39,7 @@ h2 {
 .hero {
   padding-top: 60px;
   background-color: #D1D7E5;
+  text-align: left;
 }
 
 .hero .subtitle {
