@@ -69,9 +69,12 @@ h2 {
 }
 
 .main-image img {
-  width: 100%;
+  width: 80%;
+  max-width: 300px;
+  display: block;
   border-radius: 8px;
   margin-bottom: 20px;
+  border-radius: 0px;
 }
 
 /* 2. 초대의 글 */
