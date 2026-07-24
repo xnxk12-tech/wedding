@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 모바일 화면에 맞게 비율 조정 (반응형 필수) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OO & OO의 결혼식에 초대합니다</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 모바일 청첩장 컨테이너 -->
+  <div class="mobile-container">
+    
+    <!-- 1. 메인 표지 -->
+    <section class="hero">
+      <p class="subtitle">WE ARE GETTING MARRIED</p>
+      <h1>김철수 & 이영희</h1>
+      <p class="date">2026년 10월 24일 토요일 오후 1시</p>
+      <div class="main-image">
+        <img src="https://via.placeholder.com/400x500" alt="메인 사진">
+      </div>
+      <p class="location-name">OO컨벤션 3층 그랜드홀</p>
+    </section>
+
+    <!-- 2. 초대의 글 -->
+    <section class="greeting">
+      <h2>초대의 글</h2>
+      <p>
+        서로가 마주보며 다져온 사랑을<br>
+        이제 한 곳을 바라보며 함께 걸어가고자 합니다.<br>
+        저희의 뜻깊은 시작을 함께 축복해 주시면<br>
+        더없는 기쁨으로 간직하겠습니다.
+      </p>
+      <div class="parents">
+        <p>김OO · 박OO 의 아들 <strong>철수</strong></p>
+        <p>이OO · 최OO 의 딸 <strong>영희</strong></p>
+      </div>
+    </section>
+
+    <!-- 3. 오시는 길 (지도) -->
+    <section class="location">
+      <h2>오시는 길</h2>
+      <p class="address">서울시 강남구 테헤란로 123 OO컨벤션</p>
+      <!-- 약도 이미지 또는 카카오 지도 영역 -->
+      <div class="map-box">
+        <img src="https://via.placeholder.com/400x250" alt="지도 약도">
+      </div>
+      <div class="transport">
+        <p><strong>지하철:</strong> 2호선 강남역 2번 출구 도보 5분</p>
+        <p><strong>버스:</strong> 1234번, 5678번 OO빌딩 하차</p>
+      </div>
+    </section>
+
+    <!-- 4. 마음 전하실 곳 (계좌번호) -->
+    <section class="account">
+      <h2>마음 전하실 곳</h2>
+      <p class="account-sub">축복의 마음을 담아 축의금을 전달하실 수 있습니다.</p>
+      
+      <div class="account-box">
+        <div class="account-info">
+          <span>신랑측 계좌 (국민은행)</span>
+          <strong id="groom-account">123456-02-123456</strong>
+        </div>
+        <button onclick="copyAccount('groom-account')">복사하기</button>
+      </div>
+
+      <div class="account-box">
+        <div class="account-info">
+          <span>신부측 계좌 (신한은행)</span>
+          <strong id="bride-account">987654-01-987654</strong>
+        </div>
+        <button onclick="copyAccount('bride-account')">복사하기</button>
+      </div>
+    </section>
+
+    <!-- <footer> -->
+    <footer>
+      <p>Thank you for celebrating with us!</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
